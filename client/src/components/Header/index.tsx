@@ -1,11 +1,9 @@
+import { menuItems } from '../../common';
+import classes from './style.module.scss';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
-import classes from './style.module.scss';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-import { menuItems } from '../../common';
 
 interface HeaderProps {
   handleOpenSidebar: () => void;

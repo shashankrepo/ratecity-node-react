@@ -1,11 +1,9 @@
-import { FC } from 'react';
-import classes from './style.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-
-import ProductPros from '../ProductPros';
-
 import { Product } from '../../common';
+import ProductPros from '../ProductPros';
+import classes from './style.module.scss';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FC } from 'react';
 
 interface ProductCardProps {
   product: Product;

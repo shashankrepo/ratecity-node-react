@@ -1,11 +1,9 @@
-import { FC } from 'react';
-
-import { createStyles, withStyles, Theme } from '@material-ui/core/styles';
+import classes from './style.module.scss';
+import InputBase from '@material-ui/core/InputBase';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import InputBase from '@material-ui/core/InputBase';
-
-import classes from './style.module.scss';
+import { createStyles, withStyles, Theme } from '@material-ui/core/styles';
+import { FC } from 'react';
 
 const BootstrapInput = withStyles((theme: Theme) =>
   createStyles({

@@ -1,10 +1,8 @@
-import { FC } from 'react';
-import classes from './style.module.scss';
-
 import { Product } from '../../common';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classes from './style.module.scss';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FC } from 'react';
 
 interface CompareFooterProps {
   selectedProducts: Product[];

@@ -1,12 +1,10 @@
-import { FC } from 'react';
-import classes from './style.module.scss';
-import Pagination from '@material-ui/lab/Pagination';
-
-import SelectOption from '../SelectOption';
+import { Product } from '../../common';
 import ProductCard from '../ProductCard';
 import ProductCardSkeleton from '../ProductCardSkeleton';
-
-import { Product } from '../../common';
+import SelectOption from '../SelectOption';
+import classes from './style.module.scss';
+import Pagination from '@material-ui/lab/Pagination';
+import { FC } from 'react';
 
 interface ProductProps {
   loading: boolean;

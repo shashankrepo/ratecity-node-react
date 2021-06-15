@@ -1,7 +1,6 @@
-import { FC } from 'react';
 import classes from './style.module.scss';
-
 import Skeleton from '@material-ui/lab/Skeleton';
+import { FC } from 'react';
 
 const ProductCardSkeleton: FC = () => {
   return (

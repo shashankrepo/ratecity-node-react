@@ -1,7 +1,7 @@
-import { FC } from 'react';
 import classes from './style.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FC } from 'react';
 
 interface ProductProsProps {
   content: string;

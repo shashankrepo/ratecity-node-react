@@ -1,16 +1,14 @@
-import { FC, useState } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
-
-import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 import AllProducts from '../views/AllProducts';
 import FirstHomeBuyer from '../views/FirstHomeBuyer';
 import FixedRate from '../views/FixedRate';
 import NextHomeBuyer from '../views/NextHomeBuyer';
 import Nvestor from '../views/Nvestor';
 import Refinance from '../views/Refinance';
-
 import classes from './style.module.scss';
+import { FC, useState } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
 const Layout: FC = () => {
   const [openSidebar, setOpenSidebar] = useState<boolean>(false);

@@ -1,11 +1,9 @@
-import { FC, useEffect, useState } from 'react';
-
-import axios from 'axios';
-import ProductList from '../../components/ProductList';
+import { Product } from '../../common';
 import CompareFooter from '../../components/CompareFooter';
 import CompareGraph from '../../components/CompareGraph';
-
-import { Product } from '../../common';
+import ProductList from '../../components/ProductList';
+import axios from 'axios';
+import { FC, useEffect, useState } from 'react';
 
 const AllProducts: FC = () => {
   const [products, setProducts] = useState<Product[]>([]);

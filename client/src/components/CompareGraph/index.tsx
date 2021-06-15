@@ -1,12 +1,10 @@
-import { FC, useState } from 'react';
-import classes from './style.module.scss';
 import { Product } from '../../common';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
-
 import InputField from '../InputField';
-
+import classes from './style.module.scss';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Dialog from '@material-ui/core/Dialog';
+import { FC, useState } from 'react';
 import {
   ComposedChart,
   Line,
@@ -19,8 +17,6 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-import Dialog from '@material-ui/core/Dialog';
-
 interface CompareGraphProps {
   open: true;
   selectedProducts: Product[];
@@ -32,8 +28,9 @@ const CompareGraph: FC<CompareGraphProps> = ({
   handleClose,
   selectedProducts,
 }) => {
-  const [interestRate, setInterestRate] =
-    useState<number | undefined>(undefined);
+  const [interestRate, setInterestRate] = useState<number | undefined>(
+    undefined,
+  );
   const data = selectedProducts.map((p) => {
     return {
       ...p,

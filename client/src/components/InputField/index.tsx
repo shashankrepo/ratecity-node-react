@@ -1,5 +1,5 @@
-import { FC } from 'react';
 import classes from './style.module.scss';
+import { FC } from 'react';
 
 interface InputFieldProps {
   placeholder: string;
