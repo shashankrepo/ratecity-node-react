@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  .text {
+    color: #868686;
+    font-weight: 600;
+    font-size: 0.83rem;
+    margin-left: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

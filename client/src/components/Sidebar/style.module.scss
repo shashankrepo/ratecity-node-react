@@ -1,0 +1,45 @@
+.root {
+  position: fixed;
+  width: 20rem;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #14b45a;
+  z-index: 3;
+  padding: 1rem;
+  .navbar {
+    margin-top: 2rem;
+    ul {
+      list-style-type: none; /* Remove bullets */
+      padding: 0; /* Remove padding */
+      margin: 0;
+      li {
+        margin: 0 0.75rem;
+        font-size: 1.2rem;
+        line-height: 2;
+        font-weight: 600;
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  transition: transform 0.4s ease-out;
+  top: 0;
+  right: 0;
+  animation: moveIn 0.4s;
+  @keyframes moveIn {
+    from {
+      transform: translatex(100%);
+    }
+    to {
+      transform: translatex(0);
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,23 @@
+.root {
+  position: relative;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0.5rem;
+  }
+  .pagination {
+    margin: 1rem auto;
+    // max-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .selectOption {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+}

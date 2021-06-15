@@ -1,0 +1,28 @@
+.title {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  padding: 0 2rem;
+  p {
+    line-height: 0.7;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+.inputField {
+  display: flex;
+  justify-content: flex-end;
+}
+.content {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 600px) {
+}

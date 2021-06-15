@@ -1,0 +1,90 @@
+.root {
+  margin: 1rem 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  width: 16rem;
+  .title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #6c6c6c;
+    display: -webkit-box;
+    height: 2.5rem;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .rate {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-top: 0.5px solid #f3f3f3;
+    border-bottom: 0.5px solid #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #b6b6b6;
+    font-weight: 600;
+  }
+  .interestRate {
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .percentage {
+      margin-left: 0.2rem;
+      font-size: 0.8rem;
+    }
+  }
+  .compareOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.75rem 0;
+    font-size: 0.85rem;
+    border-top: 0.5px solid #f3f3f3;
+    border-bottom: 0.5px solid #f3f3f3;
+  }
+  .linkText {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+  .moreInfo {
+    display: flex;
+    margin-top: 0.75rem;
+    justify-content: space-between;
+    img {
+      font-size: 0.7rem;
+      width: 6rem;
+      height: 2.25rem;
+    }
+  }
+  .features {
+    margin: 0.75rem 0 0;
+    color: #565656;
+    height: 7rem;
+  }
+  .btn {
+    background-color: #14b45a;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.3rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #14b45a;
+    text-decoration: none;
+    &:hover {
+      background-color: #fff;
+      color: #14b45a;
+      transition: all 0.2s;
+    }
+  }
+}
