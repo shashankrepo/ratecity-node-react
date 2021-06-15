@@ -1,18 +1,16 @@
 {
-  "name": "ratecity",
+  "name": "ratecity_fullstack",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "<seshashankmail@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "postinstall": "(cd client && yarn) && (cd server && yarn)",
+    "client": "(cd client && yarn start)",
+    "server": "(cd server && yarn start)",
+    "start": "concurrently \"yarn client\" \"yarn server\""
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "concurrently": "^6.2.0"
   }
 }

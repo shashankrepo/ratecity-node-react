@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const axios = require('axios');
-const os = require('os');
 app.use(cors());
 app.use(express.json());
 
